@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel= "stylesheet" href= "css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
 </head>
 <body style= background silver;>
 <nav class="navbar navbar-default">
@@ -20,8 +21,8 @@
     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav nav-pills navbar-right">
 	  			<li role="presentation"><a href="#">Home</a></li>
-				<li role="presentation"><a href="#">About Us </a></li>
-				<li role="presentation"><a href="#">Contact</a></li>
+				<!--<li role="presentation"><a href="#">About Us </a></li> -->
+				<!--<li role="presentation"><a href="#">Contact</a></li>-->
 				
 			</ul>
 		</div>
@@ -31,7 +32,7 @@
 				<div class= "row">
 					<div class="col-md-4"></div>
 					<div class="col-md-4">
-						<h2>Still Hanging on to Old Papers?</h2>
+						<h3>Still Hanging on to Old Papers?</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -45,7 +46,7 @@
   						<div class="input-group">
    						 <input type="text" class="form-control" placeholder="Search">
     				<div class="input-group-btn">
-      			<button class="btn btn-default" type="submit">
+      			<button onclick="myFunction()" type="submit">
         			<i class="glyphicon glyphicon-search"></i>
      			 </button>
     		</div>
@@ -59,5 +60,11 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script> 
+function myfunction(){
+	window.open("index.html");
+}
+$('.alert').alert('close')
+</script>
 </body>
 </html>
