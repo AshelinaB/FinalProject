@@ -1,0 +1,33 @@
+{
+	"key1":{
+		"zip": "10001",
+		"location":"brooklyn bridge park",
+		"time":"May 20, 2017 10 a.m.- 4 p.m.",
+		"map":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12117.925570251899!2d-74.0007305!3d40.5972014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74341c64a616cd70!2sBensonhurst+Park!5e0!3m2!1sen!2sus!4v1495066202374\" width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+	},
+	"key2":{
+		"zip": "11237",
+		"location":"house of yes",
+		"time":"May 20, 2017 10 a.m.- 4 p.m.",
+		"map":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12117.925570251899!2d-74.0007305!3d40.5972014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74341c64a616cd70!2sBensonhurst+Park!5e0!3m2!1sen!2sus!4v1495066202374\" width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+	},
+	"key3":{
+		"zip": "11222",
+		"location":"mccarren park",
+		"time":"May 27, 2017 1 p.m.- 4 p.m.",
+		"map":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12117.925570251899!2d-74.0007305!3d40.5972014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74341c64a616cd70!2sBensonhurst+Park!5e0!3m2!1sen!2sus!4v1495066202374\" width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+	},
+	"key4":{
+		"zip": "11214",
+		"location":"bensonhurst park",
+		"time":"May 20, 2017 10 a.m.- 4 p.m.",
+		"map":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12117.925570251899!2d-74.0007305!3d40.5972014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74341c64a616cd70!2sBensonhurst+Park!5e0!3m2!1sen!2sus!4v1495066202374\" width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+	},
+	"key5":{
+		"zip": "11209",
+		"location":"st anslem rc church",
+		"time":"May 22, 2017 11 a.m.- 3 p.m.",
+		"map":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12117.925570251899!2d-74.0007305!3d40.5972014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74341c64a616cd70!2sBensonhurst+Park!5e0!3m2!1sen!2sus!4v1495066202374\" width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+	},
+}
+

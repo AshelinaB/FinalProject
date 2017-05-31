@@ -8,22 +8,29 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel= "stylesheet" href= "css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+	<style>
+		button .glyphicon-search:before{
+			font-size:15px;
+		}
+	</style>
+	
 </head>
-<body style= background silver;>
-<nav class="navbar navbar-default">
-		<div class ="container-fluid">
+<body>
+<!--<bootstrap>-->
+<nav class="my-navbar navbar navbar-default">
 		<div class="navbar-header">
       	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         		<span class="glyphicon glyphicon-menu-hamburger"></span>
       		</button>
     		<a class="navbar-brand" href="#">Free Shred Finder</a>
+    		<img alt="Brand" src= "http://www.funeral-urn.com/productimages/biodegradable/MG-MM-peace-bio-urn-600.jpg" width= "100px" height="90px">
     	</div>
     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav nav-pills navbar-right">
 	  			<li role="presentation"><a href="#">Home</a></li>
 				<!--<li role="presentation"><a href="#">About Us </a></li> -->
-				<!--<li role="presentation"><a href="#">Contact</a></li>-->
-				
+				<li role="presentation"><a href="#">Contact</a></li>
+			<!--<bootstrap>-->
 			</ul>
 		</div>
 	</nav>
@@ -44,27 +51,83 @@
 				<!--searchbar -->
 					<form>
   						<div class="input-group">
-   						 <input type="text" class="form-control" placeholder="Search">
+   						 <input type="text" class="form-control" id="zip" placeholder="Search">
     				<div class="input-group-btn">
-      			<button onclick="myFunction()" type="submit">
+      			<button type="submit" id="lookup">
         			<i class="glyphicon glyphicon-search"></i>
+					<span class="glyphicon glyphicon-zoom-in"></span>
      			 </button>
+     			 <!--alert message -->
+     			 <div id="zipMessage">
+    				<div id="zipError">
+						No zipcode found.
+				</div>
     		</div>
  		 </div>
 	</form>
 				</div>
 			</div>
+			<div class="container" id="results"></div>
 		</div>
 
-	<footer>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+	// function processinputs() {
+	// 		zipcode = document.getElementById('zip').value;
+	// 	}
+		
+	// 	document.getElementById('zip').onkeyup = function(){
+	// 		processinputs();
+	// 	document.getElementById('keyValue').innerHTML = fullN;
+	// 	document.getElementById('clickEvent').onclick = function(){
+	// 		processinputs();
+	// 		document.getElementById('clickValue').innerHTML = zipcode;
+	// 	}
+	// 	document.getElementById('hoverEvent').onmouseover = function(){
+	// 		processinputs();
+	// 		document.getElementById('hoverValue').innerHTML = zipcode;
+	// 	}
+	// 	}
+</script>
 <script> 
-function myfunction(){
-	window.open("index.html");
-}
-$('.alert').alert('close')
+function lookup() {
+		
+	}
+	lookup();
+	$('#lookup').click(function(){
+		zip = $("#zip").val();
+		console.log(zip);
+
+
+
+		$.ajax({
+			url: 'js/zip.json',
+			type: 'get',
+			dataType: 'JSON',
+			cache: false,
+			error: function (data) {
+				console.log(data);
+			},
+			success: function (data) {
+				
+				$.each(data, function (index, value) {
+					
+					if(zip == value.zip ){
+						console.log(index);
+						console.log(value);
+						console.log(value.zip);
+						$("#results").empty();
+						$("#results").append("<p>"+value.zip+"</p><p>"+value.location+"</p><p>"+value.time+"</p><p>"+value.map+"</p>");
+
+					}
+				});
+
+			}
+		});
+		return false;
+	});
 </script>
 </body>
 </html>
